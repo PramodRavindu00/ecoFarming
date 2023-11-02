@@ -1,0 +1,527 @@
+.section {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+
+/*--------------------------------------------- product section ------------------------------------------------------*/
+.container {
+  display: flex;
+  background-image: url(images/admin-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.all-poducts {
+  flex: 1;
+}
+.search-products {
+  flex: 1;
+}
+
+.search-product-form {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.search-key {
+  padding: 8px 0 8px 0;
+  width: 300px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  box-shadow: 50px 50px 50px;
+  border: 1px solid transparent;
+}
+.search-key:focus {
+  outline: none;
+}
+
+.search-button {
+  width: 100px;
+  height: 40px;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-left: 2%;
+  color: white;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.search-button:hover {
+  background: #fff;
+  color: #162938;
+}
+
+#search-clear {
+  background-color: #fff;
+}
+
+.table-wrapper.search-product {
+  margin-top: 5%;
+}
+
+/*--------------------------------------------- dashboard tables  --------------------------------------------------*/
+.table-container {
+  max-height: fit-content;
+}
+.table-wrapper {
+  margin-top: 10%;
+  margin-left: 5%;
+  overflow-y: scroll;
+  height: 90%;
+  max-height: 70vh;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  padding: 10px;
+  width: 180px;
+  height: 130px;
+}
+
+table,
+th,
+tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+th {
+  background-color: #023020;
+  position: sticky;
+  color: #fff;
+  top: -2px;
+  z-index: 1;
+}
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color:#0496c7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delbtn {
+  background-color: darkred;
+  color: #fff;
+  font-size: 1.1em;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+}
+.delbtn:hover {
+  background-color: #fff;
+  color: darkred;
+  cursor: pointer;
+}
+
+.clearbtn {
+  background-color: #023020;
+  color: #fff;
+  font-size: 1.1em;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.clearbtn:hover {
+  background-color: #fff;
+  color: #023020;
+  cursor: pointer;
+}
+
+/*--------------------------------------------Farmer Dashboard--------------------------------------------------*/
+.add-product-container {
+  display: flex;
+  margin-top: 2%;
+  background-image: url(images/admin-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px;
+}
+
+#add-product-section {
+  padding-top: 2.5%;
+  color: white;
+}
+.add-product,
+.Queries {
+  flex: 1;
+  margin: 5%;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.Queries h2,
+.add-product h2 {
+  text-align: center;
+  font-weight: 100;
+}
+.contact-inputs {
+  margin: 20px 0 20px 0;
+}
+.contact-inputs .upload-image {
+  color: #fff;
+  padding: 8px 0 8px 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.contact-inputs input,
+.contact-inputs textarea {
+  padding: 8px 0 8px 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+}
+
+.contact-inputs input {
+  width: 50%;
+}
+.contact-inputs input,
+.contact-inputs textarea {
+  border: 1px solid transparent;
+}
+.contact-inputs input:focus,   /*animation effect of input fields*/
+  .contact-inputs textarea:focus
+
+   {
+  outline: none;
+}
+::-webkit-file-upload-button {
+  transition: 0.5s;
+  margin-top: 5px;
+  width: 50%;
+  height: 40px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  background-color: #023020;
+  border-radius: 20px;
+}
+::-webkit-file-upload-button:hover {
+  background: #fff;
+  color: #162938;
+  cursor: pointer;
+}
+.submit {
+  width: 30%;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: white;
+  background: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.submit:hover {
+  background: #fff;
+  color: #162938;
+}
+.submit.product {
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+.submit.query {
+  float: right;
+  margin-right: 10%;
+}
+
+/*--------------------------------------------Profile-section----------------------------------------------------*/
+.profile-header {
+  margin-top: 25px;
+  height: fit-content;
+}
+.profile-header h1 {
+  color: #023020;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 100;
+}
+.section.profile-container {
+  height: fit-content;
+  margin-top: 10px;
+  background-image: url(images/profile-section.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 5%;
+}
+.profile-input-box {
+  padding: 10px 20px 0 50px;
+}
+.profile-input-box input {
+  border: 1px solid transparent;
+  margin-top: 3px;
+  margin-left: 5%;
+  width: 50%;
+  height: 25px;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: #000;
+}
+.profile-input-box input:focus {
+  outline: none;
+}
+.update-profile,
+.change-password {
+  flex: 1;
+  padding: 30px 50px 30px 50px;
+  font-size: 1.2em;
+}
+.update-profile form,
+.change-password form {
+  padding: 20px 0 20px 0;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.profile-container form h2,
+.profile-container form h3 {
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+#btn-profile-update,
+#btn-change-password {
+  float: right;
+  margin-right: 10%;
+  width: 20%;
+  height: 35px;
+  color: white;
+  background-color: #023020;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: 0.5s;
+}
+#btn-profile-update:hover,
+#btn-change-password:hover {
+  background: #fff;
+  color: #162938;
+  cursor: pointer;
+}
+#btn-profile-update {
+  transform: translateY(-35px);
+}
+#btn-change-password {
+  transform: translateY(-55px);
+}
+#deactivate {
+  transform: translateY(50px);
+  margin-left: 30%;
+  width: 50%;
+  height: 40px;
+  font-size: 1em;
+  transition: 0.5s;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+}
+
+#deactivate:hover {
+  background-color: #fff;
+  color: darkred;
+  cursor: pointer;
+}
+
+.profile-header {
+  flex: 100%;
+}
+#footerDiv {
+  margin-top: 50px;
+}
+
+/*---------------------popup form delete confirmation --------------------------------------*/
+.overlay {
+  background-color: white;
+  position: fixed;
+  width: 300px;
+  height: 550px;
+}
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  padding: 20px;
+  z-index: 99;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px;
+  backdrop-filter: blur(30px);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.close-button {
+  /*form close button and back button*/
+  position: absolute;
+  top: 0;
+  width: 45px;
+  height: 40px;
+  background: darkred;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 700;
+}
+.close-button {
+  border-bottom-left-radius: 20px;
+  right: 0;
+  margin-right: 0;
+}
+.btnback {
+  border-bottom-right-radius: 20px;
+  left: 0;
+  margin-left: 0;
+}
+.close-button:hover {
+  background-color: #023020;
+  color: white;
+}
+
+#confirm-delete {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 60%;
+  height: 40px;
+  font-size: 1.4em;
+  transition: 0.5s;
+  border: 3px solid darkred;
+  border-radius: 20px;
+  background-color: white;
+  color: darkred;
+}
+#confirm-delete:hover {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-form h3,
+.popup-form h4 {
+  color: darkred;
+  text-align: center;
+  margin-top: 30px;
+}
+.popup-form h4 {
+  text-decoration: underline;
+}
+
+/*-------------------------------------admin dashbord -------------------------------------------------*/
+
+.section.staff-registration{
+  display: flex;
+  background-image: url(images/staff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section.staff-registration h2{
+  font-size: 2.1em;
+  font-weight: 100;
+  margin-left:30% ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form{
+
+  width:50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 2%;
+  border-radius: 5px;
+  color: white;
+}
+
+.reg-input-box {
+  padding: 10px 20px 0 50px;
+}
+.reg-input-box input ,.reg-input-box select{
+  border: 1px solid transparent;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  width: 45%;
+  height: 25px;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+  color: #000;
+}
+.reg-input-box select option{
+  font-size: 1em;
+  font-weight: 700;
+}
+.reg-input-box input:focus ,.reg-input-box select:focus{
+  outline: none;
+}
+
+.reg-input-box select{
+  width: 100%;
+}
+
+.registerStaff{
+  font-size: 1.4em;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left:12%;
+width:30%;
+height:40px;
+color: #023020;
+  background-color: #fff;
+  border:2px solid transparent;
+  border-radius: 15px;
+}
+.registerStaff:hover{
+  cursor: pointer;
+  color: #fff;
+background-color: #023020;
+border:2px solid white;
+}
+
+

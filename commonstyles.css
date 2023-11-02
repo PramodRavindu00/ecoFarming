@@ -1,0 +1,265 @@
+
+/*   ------------------------------- common styles for all the pages ---------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fffff7;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: #023020;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 100;
+}
+li a:hover {
+  font-weight: 600;
+}
+
+
+/*  button in the navigation bar */
+#btnPopUp {
+  float: right;
+  margin-right: 30px;
+  margin-top: 5px;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  border: 2.5px solid #fff;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+#btnPopUp:hover {
+  background: #fff;
+  color: #162938;
+}
+
+#First-content-section h2 {
+  font-size: 2.1em;
+  text-align: center;
+  margin-top: 20px;
+  color: #023020;
+}
+#First-content-section p ,#Services-section p,#Products-section p{
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-left: 15%;
+  width: 70%;
+  text-align: justify;
+}
+#First-content-section img {
+  margin-top: -300px;
+  width: 35%;
+  margin-left: 50%;
+  border-radius: 25px;
+}
+#About-us-section {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+.about-us-content {
+  background-image: url("images/about-us-section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 60px;
+  padding: 40px 50px 40px 50px;
+}
+.about-us-content img {
+  box-shadow: 20px 20px 50px;
+}
+
+.section h1 {
+   padding-top: 70px;
+  color: #023020;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 400;
+  
+}
+
+#About-us-section p {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.about-us-table h2 {
+  margin: 40px 0 20px 0;
+  font-size: 2.8em;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+
+#Contact-section{
+  padding-top: 40px;
+}
+
+#contact-table {
+  width: 100%;
+  margin-top: 20px;
+  background-image: url("images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-table h2 {
+  margin: 40px 0 20px 20px;
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+}
+
+.contact-info {
+  color: #fff;
+  margin-left: 15%;
+}
+
+.contact-content {
+  font-size: 1.2em;
+  padding: 10px 0 10px 30px;
+}
+.contact-content a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-content a:hover {
+  color: aqua;
+}
+.contact-content .text,
+.contact-content h3 {
+  padding: 0 0 10px 0;
+}
+.contact-content h3 {
+  text-decoration: underline;
+}
+
+#gallery-box{     /* gallery box for service section and product section*/
+  margin-top: 30px;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.service-gallery{
+  border: 7px solid #c09061;
+  border-radius: 40px;
+	width:400px;
+  height:470px;
+  display: flex;
+  margin:10px;
+  flex-direction: column;
+  background-color:#c09061;
+  box-shadow: 20px 20px 20px black;
+	}
+.service-gallery img{
+	width:250px;
+	height:200px;
+  margin-left:18%;
+  margin-top: 5%;
+	}
+.description{
+	padding:15px;
+	text-align:center;
+	}
+
+ #Products-section img{
+  width:250px;
+	height:200px;
+}
+
+
+
+ .online:hover,.onsite:hover,.workshop:hover{
+     cursor: pointer;
+     border: 7px solid #023020;
+  }
+  #login-required ,#onsite,#workshop{
+    width: 30%;
+   color: #fff;
+    background: rgba(0, 0,0, 0.5);
+    border: none;
+    
+  }
+  #login-required h3,#onsite h3,#workshop h3{
+    font-size: 15px;
+    font-weight: 100;
+  }
+  #login-required h3{
+    margin-top: 40px;
+    text-align: center;
+  }
+  #onsite h3,#workshop h3{
+    margin-top: 30px;
+    text-align: center;
+    padding:10px;
+  }
+  #login-required button{
+   margin-left:30% ;
+  }
+  #btn-login-required:hover{
+    color: #39ff14;
+  }
+
+  #footerDiv {
+  background-color: #023020;
+  height: 70px;
+}
+footer,
+footer a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  padding: 25px;
+}
+footer a:hover {
+  color: aqua;
+}
